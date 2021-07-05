@@ -1,5 +1,7 @@
 import type { Request, Response } from 'express';
 import express from 'express';
+import logger from './logging/winston-logger';
+
 
 import serviceOneRoute from './routes/service-one';
 
@@ -10,5 +12,5 @@ const app = express();
 app.use('/service-one', serviceOneRoute);
 
 app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
+    logger.info(`Server listening on ${PORT}`);
 });
