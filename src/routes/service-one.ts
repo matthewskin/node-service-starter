@@ -11,6 +11,10 @@ app.get('/doSomething', (req, res) => {
     res.send(serviceOne.serviceOneMethod());
 });
 
+app.get('/getUsers', async (req, res) => {
+    res.json(await serviceOne.serviceTwoMethod());
+});
+
 app.post('/doSomething', (req, res) => {
     res.send("More specific POST endpoint");
 });

@@ -1,6 +1,6 @@
 Generic template for a Node backend.
 
 Todo:
-- Configure a logging framework.
-- Choose and create examples of using a request framework (Axios?)
 - Configuration library for dev/test/production
+- Add testing framework
+- Improve app error handling and API error code responses
